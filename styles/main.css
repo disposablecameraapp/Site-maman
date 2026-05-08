@@ -223,15 +223,13 @@ section.tight { padding: var(--space-5) 0; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 1.4rem 0;
-  background: rgba(247, 242, 234, 0.0);
+  background: transparent;
   transition: background var(--t-fast), padding var(--t-fast), box-shadow var(--t-fast);
-  backdrop-filter: blur(0px);
 }
 .site-header.scrolled {
-  background: rgba(247, 242, 234, 0.92);
+  background: rgba(247, 242, 234, 0.96);
   padding: 0.9rem 0;
   box-shadow: 0 1px 0 var(--c-line);
-  backdrop-filter: blur(10px);
 }
 .nav-inner {
   display: flex;
