@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Scène éditoriale — paysage du sud">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4dcc1"/>
+      <stop offset="55%" stop-color="#e6b89a"/>
+      <stop offset="100%" stop-color="#c47a5e"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a6f55"/>
+      <stop offset="100%" stop-color="#6e4734"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7d8a6c"/>
+      <stop offset="100%" stop-color="#4f5b3f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="78%" cy="28%" r="14%">
+      <stop offset="0%" stop-color="#fff5d8"/>
+      <stop offset="60%" stop-color="#fde0b3" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fde0b3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <circle cx="624" cy="280" r="58" fill="#fff2d3" opacity="0.95"/>
+  <rect width="800" height="1000" fill="url(#sun)"/>
+  <path d="M0 720 C 200 640, 360 700, 540 660 C 660 632, 740 660, 800 670 L 800 1000 L 0 1000 Z" fill="url(#hill1)" opacity="0.9"/>
+  <path d="M0 800 C 220 740, 380 800, 560 770 C 680 750, 740 770, 800 780 L 800 1000 L 0 1000 Z" fill="url(#hill2)" opacity="0.95"/>
+  <!-- cypress -->
+  <g fill="#3a4a30">
+    <ellipse cx="180" cy="760" rx="14" ry="68"/>
+    <ellipse cx="218" cy="780" rx="11" ry="50"/>
+    <ellipse cx="640" cy="745" rx="16" ry="78"/>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Portrait éditorial">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9dec8"/>
+      <stop offset="60%" stop-color="#d8c6a8"/>
+      <stop offset="100%" stop-color="#b8997a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#fff4e0" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#fff4e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9c5a4"/>
+      <stop offset="100%" stop-color="#c39072"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b2a1f"/>
+      <stop offset="100%" stop-color="#1f1612"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8a4d36"/>
+      <stop offset="100%" stop-color="#5e3324"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0
+                             0 0 0 0 0
+                             0 0 0 0 0
+                             0 0 0 0.06 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+
+  <!-- shoulders / cloth -->
+  <path d="M120 1000 C 160 760, 280 700, 400 700 C 520 700, 640 760, 680 1000 Z" fill="url(#cloth)"/>
+
+  <!-- neck -->
+  <path d="M340 700 C 340 660, 460 660, 460 700 L 460 740 L 340 740 Z" fill="url(#skin)"/>
+
+  <!-- face -->
+  <ellipse cx="400" cy="500" rx="155" ry="195" fill="url(#skin)"/>
+
+  <!-- subtle face shading -->
+  <path d="M400 305 a155 195 0 0 0 -155 195" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- hair (short to shoulder length, soft wavy) -->
+  <path d="M245 480
+           C 220 350, 320 270, 400 270
+           C 480 270, 580 350, 555 480
+           C 555 470, 535 460, 510 470
+           C 500 405, 450 360, 400 360
+           C 350 360, 300 405, 290 470
+           C 265 460, 245 470, 245 480 Z"
+        fill="url(#hair)"/>
+  <path d="M245 480 C 230 600, 260 720, 320 740 L 300 700 C 270 620, 270 540, 285 490 Z"
+        fill="url(#hair)"/>
+  <path d="M555 480 C 570 600, 540 720, 480 740 L 500 700 C 530 620, 530 540, 515 490 Z"
+        fill="url(#hair)"/>
+
+  <!-- eyebrows -->
+  <path d="M325 470 q 30 -10 60 0" stroke="#3b2a1f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M415 470 q 30 -10 60 0" stroke="#3b2a1f" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- eyes (subtle, almond) -->
+  <path d="M330 510 q 25 -8 50 0 q -25 14 -50 0 Z" fill="#2a1f17"/>
+  <path d="M420 510 q 25 -8 50 0 q -25 14 -50 0 Z" fill="#2a1f17"/>
+  <circle cx="355" cy="512" r="3" fill="#fff" opacity="0.7"/>
+  <circle cx="445" cy="512" r="3" fill="#fff" opacity="0.7"/>
+
+  <!-- nose -->
+  <path d="M395 530 q -10 50 5 70 q 10 5 15 -2" stroke="#9a6e51" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- lips -->
+  <path d="M370 625 q 30 12 60 0 q -10 14 -30 14 q -20 0 -30 -14 Z" fill="#a25a3f"/>
+
+  <!-- earring suggestion -->
+  <circle cx="245" cy="560" r="4" fill="#b08a4f"/>
+  <circle cx="555" cy="560" r="4" fill="#b08a4f"/>
+
+  <rect width="800" height="1000" filter="url(#grain)" opacity="0.5"/>
+</svg>
