@@ -445,6 +445,9 @@ section.tight { padding: var(--space-5) 0; }
 .dark .eyebrow { color: var(--c-paper-2); opacity: 0.85; }
 .dark p, .dark .lede { color: var(--c-paper); }
 .dark .lede { opacity: 0.92; }
+.dark .testimonial-quote { color: var(--c-paper); }
+.dark .testimonial-author { color: var(--c-paper-2); opacity: 0.8; }
+.dark .testimonial-author strong { color: var(--c-paper); }
 .dark em, .dark .italic { color: #e9b89c; }
 .dark .btn-ghost { border-color: var(--c-paper); color: var(--c-paper); }
 .dark .btn-ghost:hover { background: var(--c-paper); color: var(--c-ink); }
