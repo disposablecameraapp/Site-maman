@@ -29,7 +29,7 @@ Site éditorial statique (HTML / CSS / JS, sans framework) pour Nathalie Astruc,
 
 ## Personnalisation rapide
 
-- **Photo** : remplacer `assets/portrait.svg` par une photo réelle (`assets/portrait.jpg`) puis mettre à jour les balises `<img>` dans `index.html` et `a-propos.html`. Format conseillé : 1200×1500 px, format JPG, < 250 ko.
+- **Photo** : déposer la photo réelle sous `assets/portrait.jpeg` ; elle est utilisée dans `index.html` (hero) et `a-propos.html` (bio). Format conseillé : 1200×1500 px, JPG, < 250 ko.
 - **Calendly** : tous les CTA pointent vers `https://calendly.com/nathalie_astruc`. Ajuster si l'URL change.
 - **Coordonnées** : téléphone, email et localisation sont centralisés dans le `<footer>` de chaque page et dans `contact.html`.
 - **Tarifs** : page `services.html` (section "Investissement"). Texte volontairement souple.
