@@ -271,7 +271,7 @@ section.tight { padding: var(--space-5) 0; }
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
 }
 .nav a {
   font-size: 0.88rem;
@@ -280,6 +280,7 @@ section.tight { padding: var(--space-5) 0; }
   position: relative;
   padding: 0.4rem 0;
   transition: color var(--t-fast);
+  white-space: nowrap;
 }
 .nav a::after {
   content: "";
@@ -303,6 +304,7 @@ section.tight { padding: var(--space-5) 0; }
   background: var(--c-ink);
   color: var(--c-paper) !important;
   transition: background var(--t-fast);
+  white-space: nowrap;
 }
 .nav-cta:hover { background: var(--c-terracotta-deep); }
 .nav-cta::after { display: none; }
@@ -314,7 +316,7 @@ section.tight { padding: var(--space-5) 0; }
   transition: transform var(--t-fast);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
   .nav-toggle { display: block; }
   .nav {
     position: fixed;
