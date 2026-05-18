@@ -244,6 +244,17 @@ section.tight { padding: var(--space-5) 0; }
   letter-spacing: -0.01em;
   line-height: 1;
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  display: block;
+}
+.brand-text {
+  display: flex;
   flex-direction: column;
 }
 .brand .b-name { font-style: italic; }
@@ -481,8 +492,10 @@ section.tight { padding: var(--space-5) 0; }
   font-size: 0.85rem; color: var(--c-muted);
 }
 .service-body ul li::before {
-  content: "—  ";
+  content: "✦  ";
   color: var(--c-terracotta);
+  font-size: 0.7em;
+  vertical-align: 1px;
 }
 .service-arrow {
   font-size: 1.6rem;
@@ -614,7 +627,7 @@ section.tight { padding: var(--space-5) 0; }
 
 .facts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--space-3);
   margin: var(--space-4) 0;
   border-top: 1px solid var(--c-line);
@@ -788,6 +801,15 @@ section.tight { padding: var(--space-5) 0; }
   font-size: 1.6rem;
   font-weight: 350;
   margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer-mark {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  filter: invert(1);
 }
 .footer-tagline {
   font-family: var(--f-serif);
