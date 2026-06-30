@@ -893,6 +893,10 @@ section.tight { padding: var(--space-5) 0; }
   }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
+  /* The keyword band is purely decorative (aria-hidden) ; keep it gently
+     scrolling even when « Réduire les animations » is enabled (e.g. macOS),
+     otherwise the universal rule above freezes it mid-screen. */
+  .marquee-track { animation-duration: 38s !important; }
 }
 
 /* --------------------------------------------------------------------------
