@@ -404,9 +404,9 @@ section.tight { padding: var(--space-5) 0; }
   font-family: var(--f-serif);
   font-style: italic;
   font-size: 1rem;
-  color: var(--c-paper);
+  color: var(--c-ink);
   letter-spacing: 0.01em;
-  text-shadow: 0 2px 18px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 14px rgba(247,242,234,0.85), 0 0 3px rgba(247,242,234,0.7);
 }
 
 @media (max-width: 880px) {
